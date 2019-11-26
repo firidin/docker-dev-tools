@@ -7,7 +7,7 @@ ENV FC_LANG="en-US" \
 
 USER root
 
-RUN apk add --update curl tzdata openssh netcat-openbsd tcpdump \
+RUN apk add --update curl tzdata openssh netcat-openbsd tcpdump busybox-extras \
  && rm /var/cache/apk/*
 
 # Add developer user
