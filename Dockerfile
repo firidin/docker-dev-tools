@@ -7,7 +7,7 @@ ENV FC_LANG="en-US" \
 
 USER root
 
-RUN apk add --update curl tzdata ttf-dejavu fontconfig openssh mailcap netcat-openbsd tcpdump busybox-extras \
+RUN apk add --update curl tzdata ttf-dejavu fontconfig openssh mailcap netcat-openbsd tcpdump busybox-extras libmagic \
  && rm /var/cache/apk/*
 
 # Add developer user
